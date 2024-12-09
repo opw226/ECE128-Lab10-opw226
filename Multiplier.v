@@ -65,8 +65,8 @@ module Top_Module(clk, rst, adr1_r, adr2_r, result);
     ROM uut1(ROM_data, ROM_addr);
     cu uut4(clk, rst, adr1_r, adr2_r, w_rf, ROM_addr, DA, SA, SB, st_out, w_ram);
     RF uut5(a, b, SA, SB, ROM_data, DA, w_rf, rst, clk);
-    C_Multiplier uut2(a, b, product);
-    RAM uut3(clk, rst, w_ram, adr_ram, product, result);    
+    Combinational_Multiplier uut2(a, b, product);
+    RAM uut3(clk, rst, w_ram, adr_ram, product, result); 
     
 
 endmodule

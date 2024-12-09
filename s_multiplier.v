@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/03/2024 11:04:53 AM
+// Create Date: 11/12/2024 01:34:31 PM
 // Design Name: 
-// Module Name: s_multiplier
+// Module Name: Sequential_Multiplier
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module C_Multiplier(
+module Combinational_Multiplier(
 input [3:0]a, b,
 output [7:0] p);
 
